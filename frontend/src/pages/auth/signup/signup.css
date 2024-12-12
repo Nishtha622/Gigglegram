@@ -1,0 +1,17 @@
+/* Footer.css */
+.footer {
+    background-color: black; /* Light background color */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e1e1e1; /* Light border for separation */
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    margin: 0;
+    color: #e4eaf0; /* Darker text color */
+  }

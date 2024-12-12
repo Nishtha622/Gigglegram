@@ -1,0 +1,151 @@
+/* Global CSS Variables - For Theming */
+:root {
+  /* --primary-bg: linear-gradient(135deg, #c9a2ff, #c9a2ff); */
+  --secondary-bg: #1c1c1c;
+  --card-bg: #333;
+  --text-color: #ffffff;
+  --button-bg: #ff6ec7;
+  --hover-bg: #ffa3e0;
+  --glow: rgba(255, 0, 255, 0.7);
+  --shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body with animated glowing effect */
+body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  background: var(--primary-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+  animation: bgGlow 10s ease-in-out infinite;
+}
+
+/* Animated background glow effect */
+@keyframes bgGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: var(--primary-bg);
+  background-size: 400% 400%;
+  animation: bgGlow 10s ease infinite;
+}
+
+/* Main Container */
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+/* Stylish Upload Card with Neon Glow Effect */
+.upload-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px var(--shadow), 0 0 20px var(--glow);
+  padding: 20px 30px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+}
+
+.upload-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px var(--hover-bg), 0 0 35px var(--hover-bg);
+}
+
+/* Title Styling */
+.upload-title {
+  font-size: 28px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 5px var(--glow), 0 0 10px var(--glow);
+}
+
+/* Input Styling with glowing effect on focus */
+.url-input,
+.caption-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #555;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s ease, box-shadow 0.2s ease;
+  color: var(--text-color);
+}
+
+.url-input:focus,
+.caption-input:focus {
+  border-color: #e26eff;
+  box-shadow: 0 0 10px var(--hover-bg);
+  outline: none;
+}
+
+/* Buttons with Flashy Light & Neon Hover Effects */
+.upload-button {
+  margin: 15px 0;
+  padding: 10px 20px;
+  background: var(--button-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px var(--glow), 0 0 20px var(--glow);
+}
+
+.upload-button:hover {
+  background: var(--hover-bg);
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 0 25px var(--hover-bg), 0 0 35px var(--hover-bg);
+}
+
+/* Responsive Design with Neon Touches */
+@media (max-width: 768px) {
+  .upload-card {
+    padding: 15px;
+  }
+
+  .upload-title {
+    font-size: 22px;
+  }
+
+  .url-input,
+  .caption-input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .upload-title {
+    font-size: 18px;
+  }
+
+  .url-input,
+  .caption-input {
+    font-size: 12px;
+  }
+
+  .upload-button {
+    font-size: 12px;
+  }
+}

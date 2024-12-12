@@ -1,0 +1,126 @@
+/* General Form Container */
+.settings-container {
+  width: 450px; /* Adjusted for a wider form */
+  margin: 40px auto; /* Center form with more spacing */
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #fff;
+}
+
+/* Light Mode Styles */
+.settings-container.light {
+  background-color: #fff;
+}
+
+.settings-container.light h2,
+.settings-container.light .form-group label {
+  color: #333; /* Darker text for labels and headings */
+}
+
+/* Input and Select Fields in Light Mode */
+.settings-container.light .input-field,
+.settings-container.light .select {
+  background-color: #333; /* Dark background like dark mode */
+  color: white; /* White text color for better contrast */
+  border: 1px solid #555; /* Darker border like dark mode */
+}
+
+/* Specific text color change for Site Name and Theme in light mode */
+.settings-container.light .input-field[name="siteName"],
+.settings-container.light .input-field[name="theme"] {
+  color: white; /* White text color for these fields */
+}
+
+/* Focus styling for input/select fields */
+.settings-container.light .input-field:focus,
+.settings-container.light .select:focus {
+  border-color: #4caf50; /* Green border on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Slight shadow effect */
+}
+
+/* Dark Mode Styles */
+.settings-container.dark {
+  background-color: #333;
+}
+
+.settings-container.dark h2,
+.settings-container.dark .form-group label {
+  color: #fff;
+}
+
+/* Input and Select Fields in Dark Mode */
+.settings-container.dark .input-field,
+.settings-container.dark .select {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #555; /* Darker border */
+}
+
+.settings-container.dark .input-field:focus,
+.settings-container.dark .select:focus {
+  border-color: #4caf50; /* Green border on focus */
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Save Button */
+.save-btn {
+  padding: 12px 25px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Make button full-width */
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Actions */
+.form-actions {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Form Group Styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased space between form elements */
+}
+
+/* Form Group Labels */
+.form-group label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Textbox and Select field styling */
+.input-field,
+.select {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus styling for input/select fields */
+.input-field:focus,
+.select:focus {
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  outline: none;
+}
+
+/* Adjustments for checkboxes */
+.checkbox {
+  margin-top: 10px;
+}

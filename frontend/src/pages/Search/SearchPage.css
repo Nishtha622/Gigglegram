@@ -1,0 +1,162 @@
+/* SearchPage.css */
+.search-page {
+    /* max-width: 800px; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #000000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: bold !important;
+    color:#000000!important;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #edeaea;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .search-bar button:active {
+    background-color: #004494;
+  }
+  
+  .result-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .result-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .result-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  
+  .result-item .details {
+    flex: 1;
+  }
+  
+  .result-item .details h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .result-item .details p {
+    margin: 4px 0 0;
+    color: #666;
+  }
+  
+  .view-more {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .view-more button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .view-more button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .view-more button:active {
+    background-color: #004494;
+  } 
+
+  .result-item h3.clickable {
+    cursor: pointer;
+    color: #fbfbfb;
+    text-decoration: none;
+  }
+  
+  .result-item h3.clickable:hover {
+    color: #0056b3;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

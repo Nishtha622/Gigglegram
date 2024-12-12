@@ -1,0 +1,41 @@
+.fixed-image {
+    width: 150px; /* Set your desired width */
+    height: 350px; /* Set your desired height */
+    object-fit: contain; /* Ensures the SVG retains its aspect ratio */
+    margin-right: 10px;
+}
+.fixed-container {
+    width: 400px;  /* Set your desired width */
+    height: 800px; /* Set your desired height */
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures that text overflow doesn’t affect the container size */
+    text-align: center;
+  }
+  
+  
+  .fixed-container h6 {
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adds ellipsis if text overflows */
+  }
+
+/* Footer.css */
+.footer {
+  background-color: black; /* Light background color */
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e1e1e1; /* Light border for separation */
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+  color: #e4eaf0; /* Darker text color */
+}
